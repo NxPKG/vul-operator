@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - vul-operator.yaml
+images:
+  - name: ghcr.io/khulnasoft/vul-operator
+    newName: khulnasoft/vul-operator
+    newTag: dev
